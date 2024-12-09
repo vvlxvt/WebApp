@@ -1,4 +1,4 @@
-from checkapp import validate_field
+from checkapp.utils import validate_field
 
 
 def test_validate_date_format1():
@@ -9,7 +9,7 @@ def test_validate_date_format2():
 def test_validate_phone():
     assert validate_field("+7 123 456 78 90") == "phone"
 def test_validate_phone1():
-    assert validate_field("+71234567890") == "phone"
+    assert validate_field("+75556661122") == "phone"
 def test_validate_phone2():
     assert validate_field("+7 999 111 1111") == "phone"
 def test_validate_phone3():

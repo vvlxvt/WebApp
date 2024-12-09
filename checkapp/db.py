@@ -6,7 +6,7 @@ class TinyDBSingleton:
     @staticmethod
     def get_instance():
         if TinyDBSingleton._instance is None:
-            TinyDBSingleton._instance = TinyDB('db.json')
+            TinyDBSingleton._instance = TinyDB('./db.json')
         return TinyDBSingleton._instance
 
 db = TinyDBSingleton.get_instance()

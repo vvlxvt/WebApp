@@ -4,12 +4,12 @@
 
 1. Клонируйте репозиторий:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/vvlxvt/WebApp
     ```
 
 2. Установите зависимости:
     ```bash
-    pip install flask tinydb
+    pip install flask tinydb pytest
     ```
 
 ## Запуск

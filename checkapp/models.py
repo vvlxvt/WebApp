@@ -23,9 +23,10 @@ def add_sample_data():
                               "phone": "phone",
                               "date": "date",
                               "bill": "text"}})
-        db.insert({"name": "Email Form",
-                   "fields": {"email": "email"
-                              }})
+        db.insert({"name": "Main Form",
+                   "fields": {"email": "email",
+                              "phone": "phone"}})
+
 
 
 
