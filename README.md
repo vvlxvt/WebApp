@@ -66,6 +66,15 @@ pytest -v tests\test_validate_field.py
 ```bash
 curl -X POST -d "email=user@example.com&phone=+75556661122" http://127.0.0.1:5000/get_form
 ```
+
+### Замечание
+В curl '+' может интерпретироваться как пробел.
+Замените '+' на '%2B' в curl:
+```bash
+curl -X POST -d "email=user@example.com&phone=%2B75556661122" http://127.0.0.1:5000/get_form
+```
+
+
 ## Контакты
 
 Если у вас есть вопросы, пишите на [vvlxvt@gmail.com](vvlxvt@gmail.com).
